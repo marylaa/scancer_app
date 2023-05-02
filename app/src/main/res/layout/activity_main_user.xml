@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main_page.MainUserActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/logo"
+        android:scaleX="0.7"
+        android:scaleY="0.7"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation_view"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tittle"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/background"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="Panel użytkownika"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="185dp" />
+
+    <TextView
+        android:id="@+id/addVisit"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="60dp"
+        android:gravity="center_vertical"
+        android:text="Sprawdź nową zmianę"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tittle" />
+
+    <ImageButton
+        android:id="@+id/camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/baseline_photo_camera_24"
+        app:layout_constraintBottom_toBottomOf="@+id/addVisit"
+        app:layout_constraintStart_toEndOf="@+id/addVisit"
+        app:layout_constraintTop_toTopOf="@+id/addVisit"
+        android:scaleY="1.3"
+        android:scaleX="1.3"/>
+
+    <TextView
+        android:id="@+id/checkVisits"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="60dp"
+        android:gravity="center_vertical"
+        android:text="Śledź zapisane zmiany"
+        android:textSize="23dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addVisit" />
+
+    <ImageButton
+        android:id="@+id/human"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/baseline_accessibility_24"
+        android:scaleX="1.8"
+        android:scaleY="1.8"
+        app:layout_constraintBottom_toBottomOf="@+id/checkVisits"
+        app:layout_constraintStart_toEndOf="@+id/addVisit"
+        app:layout_constraintTop_toBottomOf="@+id/addVisit" />
+
+    <TextView
+        android:id="@+id/checkHistory"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="60dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:text="Profilaktyka raka skóry"
+        android:textSize="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkVisits" />
+
+    <ImageButton
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/baseline_info_24"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        app:layout_constraintBottom_toBottomOf="@+id/checkHistory"
+        app:layout_constraintStart_toEndOf="@+id/addVisit"
+        app:layout_constraintTop_toBottomOf="@+id/checkVisits" />
+
+    <TextView
+        android:id="@+id/checkDoctors"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="60dp"
+        android:gravity="center_vertical"
+        android:text="Znajdź dermatologa"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkHistory" />
+
+    <ImageButton
+        android:id="@+id/doctors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/baseline_medical_services_24"
+        android:scaleX="1.3"
+        android:scaleY="1.3"
+        app:layout_constraintBottom_toBottomOf="@+id/checkDoctors"
+        app:layout_constraintStart_toEndOf="@+id/addVisit"
+        app:layout_constraintTop_toBottomOf="@+id/checkHistory" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#3C000000"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        app:itemIconSize="35dp"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/user_nav_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TOM</string>
+    <string name="err_msg_enter_email">Wprowadź adres email</string>
+    <string name="err_msg_enter_password">Wprowadź hasło</string>
+</resources>

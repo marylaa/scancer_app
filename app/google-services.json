@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1000628514996",
+    "project_id": "scancer-120f3",
+    "storage_bucket": "scancer-120f3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1000628514996:android:73c5f0bbe2724721bda7e1",
+        "android_client_info": {
+          "package_name": "com.example.tom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1000628514996-d726rlfm4qf84fpm9s6vbpnjedvkk3v9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgcf8AUrHLMNQbDPFQXMzyFaiNXhFy-vs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1000628514996-d726rlfm4qf84fpm9s6vbpnjedvkk3v9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
