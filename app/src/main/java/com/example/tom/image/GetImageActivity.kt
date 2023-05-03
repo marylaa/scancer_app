@@ -37,6 +37,9 @@ class GetImageActivity : AppCompatActivity(), View.OnClickListener {
             val selectedImage = data.data
             val imageView = findViewById<ImageView>(R.id.image)
             imageView.setImageURI(selectedImage)
+
+            val addPhoto = findViewById<Button>(R.id.button)
+            addPhoto.setText("Dokonaj analizy")
         }
     }
 }

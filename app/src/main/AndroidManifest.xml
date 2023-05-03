@@ -48,6 +48,26 @@
             android:name=".image.GetImageActivity"
             android:exported="false">
         </activity>
+        <activity
+            android:name=".interfaces.BodyMapActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".interfaces.DoctorsMapActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".InfoActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".ProfilaktykaActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".ObjawyActivity"
+            android:exported="false">
+        </activity>
     </application>
 
 </manifest>
