@@ -45,27 +45,59 @@
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
                 android:gravity="center"
-                android:lines="22"
+                android:lines="5"
                 android:singleLine="false"
-                android:text="Nowotwory złośliwe skóry to choroby charakteryzujace się szybkim i niekontrolowanym wzrostem komórek. Zazwyczaj rozwijają się na obszarach skóry, które są najbardziej narażone na słońce, takich jak twarz, szyja i dłonie. \n\n
+                android:text="Nowotwory złośliwe skóry to choroby charakteryzujace się szybkim i niekontrolowanym wzrostem komórek. Zazwyczaj rozwijają się na obszarach skóry, które są najbardziej narażone na słońce, takich jak twarz, szyja i dłonie."
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:lines="16"
+                android:singleLine="false"
+                android:text="
 Czerniak jest nowotworem rozwijającym się w melanocytach, czyli komórkach produkujących barwnik skóry. Może on wystąpić w każdej części ciała i jest on najbardziej agresywnym nowotworem. \n\n
 Rak podstawnokomórkowy to nowotwór, który rozwija się w komórkach podstawnych warstw skóry. Jest to najczęstszy typ nowotworu skórnego i najmniej agresywny. \n\n
 Rak płaskonabłonkowy to nowotwór rozwijający się w komórkach płaskonabłonkowych, które pokrywają skórę. Rak płaskonabłonkowy może przerzutować się na inne części ciała, ale jest mniej agresywny niż czerniak."
                 android:textColor="@color/black"
-                android:textSize="17dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="15dp" />
+                android:textSize="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:lines="2"
+                android:singleLine="false"
+                android:text="Zobacz jakie warunki panują dziś na zewnątrz \ni odpowiednio się przygotuj do wyjścia:"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/text3" />
 
             <ImageView
                 android:id="@+id/pogoda"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/pogoda"
-                android:layout_marginTop="10dp"
-                app:layout_constraintTop_toBottomOf="@+id/textView" />
+                app:layout_constraintTop_toBottomOf="@+id/text4" />
 
             <TextView
                 android:id="@+id/addVisit"
